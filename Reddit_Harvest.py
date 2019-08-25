@@ -4,9 +4,9 @@ import inspect
 reddit = praw.Reddit(client_id='PurljHA0fr4yYQ',
                      client_secret='URh00WvOlXQz5O_06VhkBhIXtus',
                      user_agent='Maybeatestytestmaybeatroll')
-for submission in reddit.subreddit('TIFU').top(time_filter='all', limit=100):
+for submission in reddit.subreddit('LifeProTips').top(time_filter='all', limit=1000):
     #filename = "Dataset/TIFUPostTop{}.txt".format(i)
-    filename = "TIFUFull.txt"
+    filename = "LPT.txt"
     filepath = open(filename,"a+",encoding="utf-8")
     if not submission.selftext:
         continue
