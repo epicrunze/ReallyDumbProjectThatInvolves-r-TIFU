@@ -1,8 +1,7 @@
 import praw
 import inspect
 #i = 1
-reddit = praw.Reddit(client_id='PurljHA0fr4yYQ',
-                     client_secret='URh00WvOlXQz5O_06VhkBhIXtus',
+reddit = praw.Reddit(
                      user_agent='Maybeatestytestmaybeatroll')
 for submission in reddit.subreddit('TIFU').top(time_filter='all', limit=10000):
     #filename = "Dataset/TIFUPostTop{}.txt".format(i)
